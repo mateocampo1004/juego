@@ -8,23 +8,22 @@ this.valor = valor;
       
      
             this.nvidas--;
-            alert(`${this.apodo} perdió una vida! Vidas restantes: ${this.nvidas}`);
-
-          
+              
     }
   
-
+--------------------------------
     this.mostrarPlayer = function(){
         alert(`${this.apodo} - Vidas: ${this.nvidas}`);
-    };
+     };
 
     }
 
 let jugador1 = new Juego("Player1",3,Number=prompt("Ingrese un numero del 1 a 7"));
-let jugador2 = new Juego("Player2",3,Number=prompt("Ingrese un numero del 1 a 7"));
 
-jugador1.mostrarPlayer();
-jugador1.quitarVidas();
-jugador2.mostrarPlayer();
-jugador2.quitarVidas();
 
+let etiquetaplayerOne = document.getElementById("nickplayerone");
+etiquetaplayerOne.innerHTML = `Player: ${jugador1.apodo}`;
+let etiquetaplayerOnevidas = document.getElementById("nlifesplayerone");
+etiquetaplayerOnevidas.innerHTML = `Vidas: ${jugador1.nvidas}`;
+let etiquetaplayerOnevalor = document.getElementById("valueplayerone");
+etiquetaplayerOnevalor.innerHTML = `Valor de la carta: ${jugador1.valor}`;
