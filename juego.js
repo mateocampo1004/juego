@@ -11,7 +11,7 @@ this.valor = valor;
               
     }
   
---------------------------------
+
     this.mostrarPlayer = function(){
         alert(`${this.apodo} - Vidas: ${this.nvidas}`);
      };
